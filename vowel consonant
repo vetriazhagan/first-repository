@@ -1,0 +1,9 @@
+v=input()
+if(v>='v' and v<='z'):
+    l=['a','e','i','o','u']
+    if v in l:
+        print('Vowel')
+    else:
+        print('Consonant')
+else:
+    print('Invalid')
