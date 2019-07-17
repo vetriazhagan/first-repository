@@ -1,0 +1,16 @@
+ve=int(input())
+t1=0
+lst=input().split()
+lst=list(map(int,lst))
+new=[]
+for g in range(0,ve):
+    if((lst.count(lst[g]))>=2):
+      if lst[g] not in new:
+        new.append(lst[g])
+        t1=1
+if(t1==0):
+  print("unique")
+else:
+  for g in range(0,ve):
+    print(min(new),end=" ")
+    new.remove(min(new))
